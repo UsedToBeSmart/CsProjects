@@ -17,10 +17,15 @@ public class Frame extends JFrame{
     }
     
     public void init(){
-        setLayout(new)
+        //setting screen onto frame
+        setLayout(new GridLayout(1,1,0,0));
+        //new screen object
+        Screen screen=new Screen();
+        add(screen);
         setVisible(true);
     }
     public static void main (String[] args) {
+        //new frame object
         Frame frame=new Frame();
     }
 }
